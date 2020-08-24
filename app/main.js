@@ -58,15 +58,18 @@ let zoolist = {
   aAnimal: new Aardvark("Amanda","brown","female",100),
   bAnimal: new Bobcat("Billy","brownish","male",100),
   cAnimal: new Chameleleon("Chester","green","male",100),
-  dAnimal: new Dingo("Dick", "tan", "male",100)
+  dAnimal: new Dingo("Dick", "tan", "male",100),
+  fAnimal: new Fox("Freddy", "orange","male",100)
 }
 
 function drawAnimals(){
   let template = '<ol>'
   for (let key in zoolist ){
     let animal = zoolist[key]
-    template += `<li>${animal.eats()}</li>`
+    template += `<li>${animal.fight()}</li>`
   }
   template += `</ol>`
   document.getElementById('zoo').innerHTML = template;
 }
+
+drawAnimals()
