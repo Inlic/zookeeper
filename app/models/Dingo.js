@@ -1,12 +1,12 @@
 class Dingo {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
     tail = true,
-    covering = "skin",
-    diet = "omnivore",
+    covering = "fur",
+    diet = "carnivore",
     wouldFight = "Yes"
   ){
     this.name = name;

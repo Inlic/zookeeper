@@ -1,11 +1,11 @@
 class Fox {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
     tail = true,
-    covering = "skin",
+    covering = "fur",
     diet = "omnivore",
     wouldFight = "Yes"
   ){
@@ -23,5 +23,8 @@ class Fox {
   }
   fight(){
     return `Would I fight ${this.name} with my bare hands? ${this.wouldFight}.`
+  }
+  say(){
+    return `What ${this.name} says is a long debated mystery.`
   }
 }

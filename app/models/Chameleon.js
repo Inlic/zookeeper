@@ -1,12 +1,12 @@
 class Chameleon {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
     tail = true,
     covering = "skin",
-    diet = "omnivore",
+    diet = "insectivore",
     wouldFight = "Yes"
   ){
     this.name = name;

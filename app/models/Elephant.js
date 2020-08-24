@@ -1,13 +1,13 @@
 class Elephant {
   constructor(
     name,
-    color = "brown",
+    color = "grey",
     gender,
     weight,
     tail = true,
     covering = "skin",
-    diet = "omnivore",
-    wouldFight = "Yes"
+    diet = "herbivore",
+    wouldFight = "No"
   ){
     this.name = name;
     this.color = color;
