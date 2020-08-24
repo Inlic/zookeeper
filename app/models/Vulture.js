@@ -25,3 +25,5 @@ class Vulture {
     return `Would I fight ${this.name} with my bare hands? ${this.wouldFight}.`
   }
 }
+
+export default Vulture

@@ -30,3 +30,5 @@ class Racoon {
     return `${this.name} is also known as a ${this.sillyName}`
   }
 }
+
+export default Racoon

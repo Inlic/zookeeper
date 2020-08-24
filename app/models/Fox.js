@@ -28,3 +28,5 @@ class Fox {
     return `What ${this.name} says is a long debated mystery.`
   }
 }
+
+export default Fox

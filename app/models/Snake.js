@@ -30,3 +30,5 @@ class Snake {
     return `${this.name} is also known as a ${this.sillyName}`
   }
 }
+
+export default Snake

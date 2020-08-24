@@ -26,3 +26,4 @@ class Aardvark {
   }
 }
 
+export default Aardvark

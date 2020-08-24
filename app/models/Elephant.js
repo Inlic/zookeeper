@@ -25,3 +25,5 @@ class Elephant {
     return `Would I fight ${this.name} with my bare hands? ${this.wouldFight}.`
   }
 }
+
+export default Elephant
