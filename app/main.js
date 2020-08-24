@@ -27,31 +27,46 @@ import Zebra from './models/Zebra.js'
 
 // must pass undefined on a default to get the default parameter
 
-let aAnimal = new Aardvark("Amanda","brown","female",100)
-let bAnimal = new Bobcat("Billy","brownish","male",100)
-let cAnimal = new Chameleleon("Chester","green","male",100)
-let dAnimal = new Dingo("Dick", "tan", "male",100)
-let eAnimal = new Elephant("Emily","grey","female",100)
-let fAnimal = new Fox("Freddy", "orange","male",100)
-let gAnimal = new Gopher("Gretta", "brown", "female",100)
-let hAnimal = new Hummingbird("Holly", "green","female",100)
-let iAnimal = new Impala("Ian","tan","male",100)
-let jAnimal = new Jaguar("Jake","spotted","male",100)
-let kAnimal = new Koala("Katey","grey","female",100)
-let lAnimal = new Lion("Leo","golden","male",100)
-let mAnimal = new Mongoose("Mary","brown","female",100)
-let nAnimal = new Nuthatch("Nate","black white and yellow","male",100)
-let oAnimal = new Ocelot("Oscar","spotted","male",100)
-let pAnimal = new Porcupine("Penny","brown","female",100)
-let qAnimal = new Quail("Quincey", "brown", "male",100)
-let rAnimal = new Racoon("Rockey","brownish","male",100)
-let sAnimal = new Snake("Sandra","green","female",100)
-let tAnimal = new Tayra("Tommy","brownish","male",100)
-let uAnimal = new Urial("Uma","reddish","female",100)
-let vAnimal = new Vulture("Vickey","blackish","female",100)
-let wAnimal = new Wallaby("Wesley","brownish","male",100)
-let xAnimal = new Xerus("Xenu","tan","male",100)
-let yAnimal = new Yak("Yancey","black","male",100)
-let zAnimal = new Zebra("Zack","black and white striped","male",100)
+// let aAnimal = new Aardvark("Amanda","brown","female",100)
+// let bAnimal = new Bobcat("Billy","brownish","male",100)
+// let cAnimal = new Chameleleon("Chester","green","male",100)
+// let dAnimal = new Dingo("Dick", "tan", "male",100)
+// let eAnimal = new Elephant("Emily","grey","female",100)
+// let fAnimal = new Fox("Freddy", "orange","male",100)
+// let gAnimal = new Gopher("Gretta", "brown", "female",100)
+// let hAnimal = new Hummingbird("Holly", "green","female",100)
+// let iAnimal = new Impala("Ian","tan","male",100)
+// let jAnimal = new Jaguar("Jake","spotted","male",100)
+// let kAnimal = new Koala("Katey","grey","female",100)
+// let lAnimal = new Lion("Leo","golden","male",100)
+// let mAnimal = new Mongoose("Mary","brown","female",100)
+// let nAnimal = new Nuthatch("Nate","black white and yellow","male",100)
+// let oAnimal = new Ocelot("Oscar","spotted","male",100)
+// let pAnimal = new Porcupine("Penny","brown","female",100)
+// let qAnimal = new Quail("Quincey", "brown", "male",100)
+// let rAnimal = new Racoon("Rockey","brownish","male",100)
+// let sAnimal = new Snake("Sandra","green","female",100)
+// let tAnimal = new Tayra("Tommy","brownish","male",100)
+// let uAnimal = new Urial("Uma","reddish","female",100)
+// let vAnimal = new Vulture("Vickey","blackish","female",100)
+// let wAnimal = new Wallaby("Wesley","brownish","male",100)
+// let xAnimal = new Xerus("Xenu","tan","male",100)
+// let yAnimal = new Yak("Yancey","black","male",100)
+// let zAnimal = new Zebra("Zack","black and white striped","male",100)
 
-console.log(fAnimal.say())
+let zoolist = {
+  aAnimal: new Aardvark("Amanda","brown","female",100),
+  bAnimal: new Bobcat("Billy","brownish","male",100),
+  cAnimal: new Chameleleon("Chester","green","male",100),
+  dAnimal: new Dingo("Dick", "tan", "male",100)
+}
+
+function drawAnimals(){
+  let template = '<ol>'
+  for (let key in zoolist ){
+    let animal = zoolist[key]
+    template += `<li>${animal.eats()}</li>`
+  }
+  template += `</ol>`
+  document.getElementById('zoo').innerHTML = template;
+}
