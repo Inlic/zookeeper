@@ -5,8 +5,8 @@ class Rabbit {
     gender,
     weight,
     tail = true,
-    covering = "skin",
-    diet = "omnivore",
+    covering = "fur",
+    diet = "herbivore",
     wouldFight = "Yes"
   ){
     this.name = name;

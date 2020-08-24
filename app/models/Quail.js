@@ -1,11 +1,11 @@
 class Quail {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
-    tail = true,
-    covering = "skin",
+    tail = false,
+    covering = "feathers",
     diet = "omnivore",
     wouldFight = "Yes"
   ){

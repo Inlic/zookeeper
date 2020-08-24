@@ -1,11 +1,11 @@
 class Tayra {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
     tail = true,
-    covering = "skin",
+    covering = "fur",
     diet = "omnivore",
     wouldFight = "Yes"
   ){

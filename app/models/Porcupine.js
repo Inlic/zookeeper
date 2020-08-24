@@ -5,9 +5,9 @@ class Porcupine {
     gender,
     weight,
     tail = true,
-    covering = "skin",
-    diet = "omnivore",
-    wouldFight = "Yes"
+    covering = "quills",
+    diet = "herbivore",
+    wouldFight = "No"
   ){
     this.name = name;
     this.color = color;

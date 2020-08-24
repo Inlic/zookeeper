@@ -1,13 +1,13 @@
 class Zebra {
   constructor(
     name,
-    color = "brown",
+    color = "Black and White Striped",
     gender,
     weight,
     tail = true,
     covering = "skin",
-    diet = "omnivore",
-    wouldFight = "Yes"
+    diet = "herbivore",
+    wouldFight = "No"
   ){
     this.name = name;
     this.color = color;

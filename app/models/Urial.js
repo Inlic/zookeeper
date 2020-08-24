@@ -1,13 +1,13 @@
 class Urial {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
     tail = true,
-    covering = "skin",
-    diet = "omnivore",
-    wouldFight = "Yes"
+    covering = "fur",
+    diet = "herbivore",
+    wouldFight = "No"
   ){
     this.name = name;
     this.color = color;

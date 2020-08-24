@@ -1,11 +1,11 @@
 class Nuthatch {
   constructor(
     name,
-    color = "brown",
+    color,
     gender,
     weight,
     tail = true,
-    covering = "skin",
+    covering = "feathers",
     diet = "omnivore",
     wouldFight = "Yes"
   ){

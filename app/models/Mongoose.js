@@ -5,8 +5,8 @@ class Mongoose {
     gender,
     weight,
     tail = true,
-    covering = "skin",
-    diet = "omnivore",
+    covering = "fur",
+    diet = "carnivore",
     wouldFight = "Yes"
   ){
     this.name = name;
